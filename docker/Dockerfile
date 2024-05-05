@@ -10,9 +10,9 @@ RUN apk --no-cache add git ca-certificates && \
 
 FROM scratch as bin
 
-WORKDIR /librarian
+WORKDIR /app
 COPY --from=build /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 COPY --from=build /src/librarian .
 
 EXPOSE 3000
-CMD ["/librarian/librarian"]
+CMD ["/app/librarian"]
