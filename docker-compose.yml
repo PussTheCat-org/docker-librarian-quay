@@ -1,0 +1,11 @@
+services:
+
+  librarian:
+    container_name: librarian
+    image: codeberg.org/librarian/librarian:latest
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:3000:3000" # Replace with "3000:3000" if you don't use a reverse proxy
+    volumes:
+      - "./config.yml:/app/config.yml"
+      - "./cache/:/var/cache/librarian"
