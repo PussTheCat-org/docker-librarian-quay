@@ -6,7 +6,7 @@ A [Librarian](https://codeberg.org/librarian/librarian/) image, on Quay.
 
 This image mostly exist for the [PussTheCat.org](https://pussthecat.org/) [instance](https://librarian.pussthecat.org/), but others are free to use it.
 
-This image was made because, even though the project is deprecated, it still works. However, since the project was archived so "fresh" image was built, which mean that the upstream image is potentially vulnerable. This image is just a drop in replacement for the upstream image.
+This image was made because, even though the project is abandoned and "dead", it still works. However, since the project was archived no "fresh" image was built, which mean that the upstream image is potentially vulnerable. This image is just a drop in replacement for the upstream image, rebuilt at a regular interval so that it never is vulnerable (at least, outside off the software itself).
 
 
 ## Usage:
